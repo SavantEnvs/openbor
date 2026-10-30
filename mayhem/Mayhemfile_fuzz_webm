@@ -1,0 +1,10 @@
+project: savantenvs/openbor
+target: fuzz_webm
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_webm/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_webm
+    libfuzzer: true
+    timeout: 5
+    dictionary: /mayhem/mayhem/fuzz_webm/fuzz_webm.dict

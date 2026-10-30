@@ -1,0 +1,1 @@
+void m(){switch=0;i++
